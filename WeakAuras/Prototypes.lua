@@ -913,6 +913,15 @@ Private.load_prototype = {
       desc = L["Supports multiple entries, separated by commas"]
     },
     {
+      name = "subZone",
+      display = L["SubZone Name"],
+      type = "string",
+      init = "arg",
+      test = "WeakAuras.CheckString(%q, subZone)",
+      events = {"ZONE_CHANGED", "ZONE_CHANGED_INDOORS", "ZONE_CHANGED_NEW_AREA", "VEHICLE_UPDATE"},
+      desc = L["Rabotaet kak predydushchaya no isklyu4aetee"]
+    },
+    {
       name = "zoneId",
       display = L["Zone ID(s)"],
       type = "string",
