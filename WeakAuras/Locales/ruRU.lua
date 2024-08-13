@@ -1009,6 +1009,7 @@ L["Subtract GCD"] = "Вычесть GCD"
 L["Sulfuron Harbinger"] = "Предвестник Сульфурон"
 L["Summon"] = "Призыв"
 L["Supports multiple entries, separated by commas"] = "Можно указать несколько значений, разделенных запятыми."
+L["Rabotaet kak predydushchaya no isklyu4aetee"] = "Можно указать несколько значений, разделенных запятыми. При использовании этого метода загрузки не бутет обрабатываться метод 'Название игровой зоны"
 L[ [=[Supports multiple entries, separated by commas
 ]=] ] = [=[Можно указать несколько значений, разделенных запятыми.
 ]=]
@@ -1177,6 +1178,7 @@ L["Your threat on the mob as a percentage of the amount required to pull aggro. 
 L["Your total threat on the mob."] = "Количество вашей угрозы по отношению к единице"
 L["Zone ID(s)"] = "ID игровой зоны"
 L["Zone Name"] = "Название игровой зоны"
+L["SubZone Name"] = "Название локации игровой зоны('подзона')"
 L["Zoom"] = "Масштаб"
 L["Zul'Gurub"] = "Зул'Гуруб"
 
