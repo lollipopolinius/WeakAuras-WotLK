@@ -1538,7 +1538,7 @@ L["Your total threat on the mob."] = "Your total threat on the mob."
 --[[Translation missing --]]
 L["Zone ID(s)"] = "Zone ID(s)"
 L["Zone Name"] = "Gebietsname"
-L["Zone Name"] = "Name des Spielbereichs"
+L["SubZone Name"] = "Name des Spielbereichs"
 L["Zoom"] = "Zoom"
 L["Zul'Gurub"] = "Zul'Gurub"
 
