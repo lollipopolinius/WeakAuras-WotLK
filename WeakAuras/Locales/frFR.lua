@@ -1399,6 +1399,8 @@ L["Your threat on the mob as a percentage of the amount required to pull aggro. 
 L["Your total threat on the mob."] = "Your total threat on the mob."
 L["Zone ID(s)"] = "ID de la Zone"
 L["Zone Name"] = "Nom de la Zone"
+--[[Translation missing --]]
+L["Subzone Name"] = "Subzone Name"
 L["Zoom"] = "Zoom"
 --[[Translation missing --]]
 L["Zul'Gurub"] = "Zul'Gurub"
