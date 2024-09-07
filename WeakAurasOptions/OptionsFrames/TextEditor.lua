@@ -151,6 +151,17 @@ end]=]
     snippet = [=[
       aura_env.button = aura_env.button or CreateFrame("Button", nil, aura_env.region)  
       aura_env.button:SetAllPoints()
+    	local htex = aura_env.button:CreateTexture()
+      htex:SetTexture("Interface/Buttons/ButtonHilight-Square")
+      htex:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+      htex:SetAllPoints()
+      aura_env.button:SetHighlightTexture(htex)
+      local ptex = aura_env.button:CreateTexture()
+      ptex:SetTexture("Interface/Buttons/CheckButtonGlow")
+      ptex:SetTexCoord(0.22,0.78,0.22,0.78)
+      ptex:SetAllPoints()
+      aura_env.button:SetPushedTexture(ptex)
+    
       aura_env.button:SetScript("OnClick", function(self, click)
         -- code on click
       end)
