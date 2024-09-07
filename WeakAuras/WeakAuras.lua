@@ -1,6 +1,6 @@
 local AddonName, Private = ...
 
-local internalVersion = 752
+local internalVersion = 754
 
 -- Lua APIs
 local insert = table.insert
