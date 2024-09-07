@@ -146,6 +146,64 @@ function(allstates, event, ...)
     return true
 end]=]
   },
+  {
+    name = "Clickable Button",
+    snippet = [=[
+      aura_env.button = aura_env.button or CreateFrame("Button", nil, aura_env.region)  
+      aura_env.button:SetAllPoints()
+      aura_env.button:SetScript("OnClick", function(self, click)
+        -- code on click
+      end)
+      aura_env.button:SetScript("OnEnter",function(self)
+        -- code on mouseover button
+        GameTooltip:SetOwner(self, 'ANCHOR_RIGHT')
+        GameTooltip:AddLine("Onclick")
+        GameTooltip:Show()
+      end)
+      aura_env.button:SetScript("OnLeave",function(self)
+        -- code on leave button
+        GameTooltip:Hide()
+      end)
+    ]=]
+  },
+  {
+    name = "Clickable Macro-Button",
+    snippet = [=[
+      aura_env.button = aura_env.button or CreateFrame("Button", nil, aura_env.region,"SecureActionButtonTemplate") 
+      aura_env.button:SetAllPoints()
+      aura_env.button:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+      
+      local htex = aura_env.button:CreateTexture()
+      htex:SetTexture("Interface/Buttons/ButtonHilight-Square")
+      htex:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+      htex:SetAllPoints()
+      aura_env.button:SetHighlightTexture(htex)
+      local ptex = aura_env.button:CreateTexture()
+      ptex:SetTexture("Interface/Buttons/CheckButtonGlow")
+      ptex:SetTexCoord(0.22,0.78,0.22,0.78)
+      ptex:SetAllPoints()
+      aura_env.button:SetPushedTexture(ptex)
+      
+      local text = aura_env.config.macros
+      aura_env.button:SetAttribute("type", "macro")
+--[[
+      in next row need fix arg2 in macrotext which will be used when clicking button:
+      example - aura_env.button:SetAttribute("macrotext", "/run CancelUnitBuff('player', 1)");
+]]
+      aura_env.button:SetAttribute("macrotext", "arg2-rewrite-me");
+      
+      aura_env.button:SetScript("OnEnter",function(self)
+        -- code on mouseover button
+        GameTooltip:SetOwner(self, 'ANCHOR_RIGHT')
+        GameTooltip:AddLine("I'm macros button") -- rewrite tooltipe
+        GameTooltip:Show()
+      end)
+      aura_env.button:SetScript("OnLeave",function(self)
+        -- code on leave button
+        GameTooltip:Hide()
+      end)
+    ]=]
+  },
 }
 
 local function ConstructTextEditor(frame)
