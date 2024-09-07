@@ -184,7 +184,6 @@ end]=]
       ptex:SetAllPoints()
       aura_env.button:SetPushedTexture(ptex)
       
-      local text = aura_env.config.macros
       aura_env.button:SetAttribute("type", "macro")
 --[[
       in next row need fix arg2 in macrotext which will be used when clicking button:
