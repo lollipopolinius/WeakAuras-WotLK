@@ -151,6 +151,8 @@ end]=]
     snippet = [=[
       aura_env.button = aura_env.button or CreateFrame("Button", nil, aura_env.region)  
       aura_env.button:SetAllPoints()
+      aura_env.button:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+    
     	local htex = aura_env.button:CreateTexture()
       htex:SetTexture("Interface/Buttons/ButtonHilight-Square")
       htex:SetTexCoord(0.08, 0.92, 0.08, 0.92)
