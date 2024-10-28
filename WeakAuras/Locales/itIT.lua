@@ -1934,6 +1934,8 @@ L["Zone ID(s)"] = "Zone ID(s)"
 --[[Translation missing --]]
 L["Zone Name"] = "Zone Name"
 --[[Translation missing --]]
+L["SubZone Name"] = "Subzone Name"
+--[[Translation missing --]]
 L["Zoom"] = "Zoom"
 --[[Translation missing --]]
 L["Zul'Gurub"] = "Zul'Gurub"
